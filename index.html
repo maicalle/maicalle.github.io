@@ -2,99 +2,294 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>꽃 집, 나.</title>
-    <style>
-    @font-face{
-      font-family: "Arita-buri";
-      src: url("Arita-buriB.ttf");
-    }
-    @font-face{
-      font-family: "Arita-buri2";
-      src: url("Arita-buriL.ttf")
-    }
-    @font-face{
-      font-family: "gothic";
-      src: url("AppleSDGothicNeo.ttc")
-    }
-    body {
-      margin: 0px;
-    }
-    .aa {
-      width:100px;
-      margin:30px 30px 60px 40px;
-      font-family: "Arita-buri", serif;
-      font-size: 15px;
-      font-weight: bold;
-    }
-    .aa a:link {
-      color: white;
-      text-decoration: none;
-    }
-    .aa a:visited {
-      color : white;
-    }
-    .aa a:hover{
-      color: #4B8294;
-    }
-    #navi {
-      margin-top:50px;
-      width:120px;
-      margin-right: 0px;
-      display: inline-block;
-      position: fixed;
-    }
-    #first {
-      padding-bottom: 55px;
-    }
-    #first img{
-      width: 35%;
-      height: 35%;
-      display: block;
-      margin-left: 32%;
-      margin-right: 1200px;
-      padding-bottom: 80px;
-      padding-top: 0%;
-      text-align: center;
-    }
-    #main {
-      background-color:#eda89d;
-      padding-bottom:1%;
-      margin: 0px;
-      padding: 0px;
-    }
-    #logo img {
-      margin-top:2%;
-      margin-left:2%;
-      height: 50px;
-      width: 50px;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style media="screen">
+      * {
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+      }
+      ul {
+        list-style-type:none;
+      }
+      body {
+        font-family:"noto sans KR", sans-serif;
+        font-size:100%;
+      }
+      [class*="c_"] {
+        float:left;
+        padding:10px;
+      }
+      /* 너비가 600픽셀 미만인 스마트폰을 위한 기본 설정 */
+      [class*="c_"] {
+        width:100%;
+      }
+      /* 너비가 600픽셀 이상인 태블릿을 위한 설정 */
+      @media only screen and (min-width: 600px) {
+        .c_m_1 {width:8.33%}
+        .c_m_2 {width:16.66%}
+        .c_m_3 {width:25%}
+        .c_m_4 {width:33.33%}
+        .c_m_5 {width:41.66%}
+        .c_m_6 {width:50%}
+        .c_m_7 {width:58.33%}
+        .c_m_8 {width:66.66%}
+        .c_m_9 {width:75%}
+        .c_m_10 {width:83.33%}
+        .c_m_11 {width:91.66%}
+        .c_m_12 {width:100%}
+      }
+      /* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
+      @media only screen and (min-width:768px) {
+        .c_1 {width:8.33%}
+        .c_2 {width:16.66%}
+        .c_3 {width:25%}
+        .c_4 {width:33.33%}
+        .c_5 {width:41.66%}
+        .c_6 {width:50%}
+        .c_7 {width:58.33%}
+        .c_8 {width:66.66%}
+        .c_9 {width:75%}
+        .c_10 {width:83.33%}
+        .c_11 {width:91.66%}
+        .c_12 {width:100%}
+      }
+      header {
+        height:45px;
+        padding:12px 0px 0px 10px;
+        background-color:#ffffff;
+        text-align:center;
+      }
+      aside#menu {
+        color:#37285d;
+        position:fixed;
+      }
+      aside#menu li {
+        padding:10px;
+        margin:5px 0 0 0;
+      }
+      section#margin {
+        padding:15px;
+      }
+      section#margin p {
+        padding:5px;
+        font-size:0.95em;
+        line-height:130%;
+      }
+      aside#photos img {
+        width:100%;
+      }
+      aside#photos li {
+        margin:5px 0 0 0;
+      }
+      footer {
+        margin-left:-15%;
+        height:20px;
+        clear:both;
+        font-size:20%;
+        text-align:center;
+      }
+      img {
+        width:100px;
+      }
+      a:link {
+        color:#000000;
+        text-decoration:none;
+      }
+      a:visited {
+        color:#000000;
+      }
+      a:hover {
+        color:#21579e;
+      }
+      #h1 {
+        color:#21579e;
+        font-size:100%;
+        font-weight:300;
+      }
+      #main_right {
+        text-align:right;
+        font-weight:900;
+        font-size:600%;
+        margin-top:70%;
+      }
+      #main_left {
+        text-align:right;
+        font-weight:900;
+        font-size:900%;
+        margin-top:15%;
+      }
+      p {
+        color:#21579e;
+      }
+      .items {
+        border:solid 8px #000000;
+        float:left;
+        margin:-5px;
+        width:28%;
+      }
+      .items img {
+        display:block;
+      }
+      .clear {
+        clear:left;
+      }
+      #title {
+        margin-left:34.8%;
+        font-size:150%;
+        font-weight:500;
+        color:#21579e;
+      }
+      .items1 {
+        border:solid 8px #000000;
+        float:left;
+        margin:-5px;
+        width:42%;
+      }
+      .items1 img {
+        display:block;
+      }
+      #title1 {
+        margin-left:36%;
+        font-size:150%;
+        font-weight:500;
+        color:#21579e;
+      }
+      #title2 {
+        margin-left:36%;
+        font-size:150%;
+        font-weight:500;
+        color:#21579e;
+      }
+      #title3 {
+        margin-left:36%;
+        font-size:150%;
+        font-weight:500;
+        color:#21579e;
+      }
+      #con {
+        font-weight:900;
+        font-size:900%;
+        margin-left:1%;
+      }
+      #con2 {
+        font-weight:900;
+        font-size:300%;
+        margin-left:24%;
+      }
+      #con1 {
+        font-weight:900;
+        font-size:200%;
+      }
     </style>
+
   </head>
   <body>
-    <div id="main">
-      <div id="logo">
-        <img src="logo2.png">
+    <header class="c12">
+      <a href="homeworks.html"><h1 id="h1">HTML, CSS PORTFOLIO</h1></a>
+    </header>
+    <aside id="menu" class="c_m_4 c_4">
+      <ul>
+        <li><a href="homeworks.html">Home</a></li>
+        <li><a href="#title">Aprile</a></li>
+        <li><a href="#title1">May</a></li>
+        <li><a href="#title2">Contact</a></li>
+        <li><a href="#title3">Review</a></li>
+      </ul>
+    </aside>
+    <section id="main" class="c_m_2 c_2">
+    </section>
+    <aside id="photos" class="c_m_10 c_10">
+      <div id="main_left">
+        <p>THE PORTFOLIO</p>
+        <p>OF MY HTML/CSS</p>
+        <p>DOCUMENTS</p>
+      </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div id="title">< 4월, Aprile ></div><br><br><br><br><br>
+      <div class="items">
+        <img src="1.png">
       </div>
-      <div id="navi">
-        <p class="aa">
-          <a href="index.html">처음.</a>
-        </p>
-        <p class="aa">
-          <a href="bal.html">발아.</a>
-        </p>
-        <p class="aa">
-          <a href="boon.html">분갈이.</a>
-        </p>
-        <p class="aa">
-          <a href="gae.html">개화.</a>
-        </p>
-        <p class="aa">
-          <a href="man.html">만개.</a>
-        </p>
+      <div class="items">
+        <img src="2.png">
       </div>
-      <div id="first">
-        <img src="/flower1_1.png"/>
+      <div class="items">
+        <img src="3.png">
       </div>
-    </div>
+      <div class="clear">
+
+      </div>
+      <div class="items">
+        <img src="3-1.png">
+      </div>
+      <div class="items">
+        <img src="4.png">
+      </div>
+      <div class="items">
+        <img src="5.png">
+      </div>
+      <div class="clear">
+      </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div id="title1">< 5월, May ></div><br><br><br><br><br>
+      <div class="items1">
+        <img src="6.png">
+      </div>
+      <div class="items1">
+        <img src="7.png">
+      </div>
+      <div class="clear">
+
+      </div>
+      <div class="items1">
+        <img src="8.png">
+      </div>
+      <div class="items1">
+        <img src="9.png">
+      </div>
+      <div class="clear">
+
+      </div>
+      <div class="items1">
+        <img src="10.png">
+      </div>
+      <div class="items1">
+        <img src="11.png">
+      </div>
+      <div class="clear">
+
+      </div>
+      <div class="items1">
+        <img src="12.png">
+      </div>
+      <div class="items1">
+        <img src="13.png">
+      </div>
+      <div class="clear">
+
+      </div>
+      <div class="items1">
+        <img src="14.png">
+      </div>
+      <div class="items1">
+        <img src="15.png">
+      </div>
+      <div class="clear"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div id="title2">< Contact ></div><br><br><br><br><br>
+      <a id="con">
+        CALL ME NOW
+      </a><br>
+      <a id=con2>
+        +8210-9992-8618
+      </a>
+      </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div id="title3">< Review ></div><br><br><br><br><br>
+      <a id="con1">
+        진짜 열심히 이쁘게 잘 만들고 싶었으나...건강이..좋지않아 다쳐서 시간이<br> 부족한 관계로 병상에 누워있으면서 제작한 홈페이지입니다....
+        너무 아쉽<br>지만...죄송합니다.....<br>아파요..턱이 ㅠㅠ... 감사합니다..한학기..고생하셨습니다..!
+      </a>
+      <footer class="c12">
+        COPYRIGHT(C) Jadon Kim All Rights Reseved.
+      </footer>
+    </aside>
   </body>
 </html>
